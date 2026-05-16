@@ -4,3 +4,6 @@ telefono
 nombre
 apellido
 telefono 
+nombre
+apellido
+telefono 
