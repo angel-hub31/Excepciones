@@ -15,7 +15,7 @@ public class LeerContacto {
 		BufferedReader br =null;
 		
 		try {
-			br=new BufferedReader(new FileReader("contactos.txt"));
+			br=new BufferedReader(new FileReader("prueba.txt"));
 			
 			for (Object lineaObj : br.lines().toArray()) {
 				System.out.println(lineaObj);
