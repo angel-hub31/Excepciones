@@ -9,12 +9,18 @@ public class Test {
 
 	public static void main(String[] args) {
 		//telefono invalido
+		System.out.println();
+		System.out.println("------------Prueba 1-------------");
+		System.out.println();
 		log.info("Prueba 1: ");
 		ejecutarFlujo("Maria","Gomez","123");
 
 		System.out.println("------------");
 		
 		//telefono valido
+		System.out.println();
+		System.out.println("------------Prueba 2-------------");
+
 		log.info("--- Iniciando Prueba 2 (Teléfono Válido) ---");
         ejecutarFlujo("Maria", "Gomez", "0981234567");
         
