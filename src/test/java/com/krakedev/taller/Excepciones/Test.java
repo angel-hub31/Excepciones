@@ -27,7 +27,7 @@ public class Test {
 			GuardarContacto.guardar(nombre, apellido, telefono);
 			LeerContacto.leer();
 
-			log.info("¡Todo el proceso salió bien!");
+			log.info("Proceso exitoso");
 		} catch (IllegalArgumentException e) {
 			log.error("Validación fallida - El teléfono es inválido: {}", e.getMessage());
 		}
