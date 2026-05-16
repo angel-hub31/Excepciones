@@ -18,6 +18,8 @@ public class Test {
 		log.info("--- Iniciando Prueba 2 (Teléfono Válido) ---");
         ejecutarFlujo("Maria", "Gomez", "0981234567");
         
+      
+        
 	}
 
 	private static void ejecutarFlujo(String nombre, String apellido, String telefono) {

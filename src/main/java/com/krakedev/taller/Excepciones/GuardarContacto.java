@@ -17,9 +17,9 @@ public class GuardarContacto {
 		try {
 			escritor=new FileWriter("contactos.txt",true);
 			
-			escritor.write("nombre\n");
-			escritor.write("apellido\n");
-            escritor.write("telefono \n");
+			escritor.write(nombre +"\n");
+			escritor.write(apellido +"\n");
+            escritor.write(telefono +" \n");
             
             log.info("Contacto guardado exitosamente: {} {}", nombre, apellido);
 			
