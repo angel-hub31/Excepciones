@@ -8,14 +8,28 @@ public class Test {
 	private static final Logger log = LoggerFactory.getLogger(Test.class);
 
 	public static void main(String[] args) {
-		int a = 10;
-		int b = 0;
-		try {
-			int c = a / b;
-			log.info("Resultado es: " + c);
-		} catch (Exception e) {
-			log.error("error matematico: " + e.getMessage());
+		//telefono invalido
+		log.info("Prueba 1: ");
+		ejecutarFlujo("Maria","Gomez","123");
 
+		System.out.println("------------");
+		
+		//telefono valido
+		log.info("--- Iniciando Prueba 2 (Teléfono Válido) ---");
+        ejecutarFlujo("Maria", "Gomez", "0981234567");
+        
+	}
+
+	private static void ejecutarFlujo(String nombre, String apellido, String telefono) {
+		try {
+			ValidarContacto.validarTelefono(telefono);
+
+			GuardarContacto.guardar(nombre, apellido, telefono);
+			LeerContacto.leer();
+
+			log.info("¡Todo el proceso salió bien!");
+		} catch (IllegalArgumentException e) {
+			log.error("Validación fallida - El teléfono es inválido: {}", e.getMessage());
 		}
 
 	}
