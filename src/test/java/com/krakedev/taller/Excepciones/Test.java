@@ -22,7 +22,7 @@ public class Test {
 		System.out.println("------------Prueba 2-------------");
 
 		log.info("--- Iniciando Prueba 2 (Teléfono Válido) ---");
-        ejecutarFlujo("Maria", "Gomez", "0981234567");
+        ejecutarFlujo("Angel", "Morales", "0980034567");
         
       
         
